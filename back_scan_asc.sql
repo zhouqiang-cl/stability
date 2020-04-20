@@ -1,0 +1,9 @@
+use back_scan;
+SELECT *
+FROM CONTRACT_LOG_CS
+WHERE (
+    TRANS_TYPE = '3201'
+    AND
+    RESULT = 1
+    AND USER_ID = 'xx'
+) ORDER BY TRANS_TIME LIMIT 0,11
